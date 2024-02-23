@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
   // Iniciar o countdown
   updateCountdown();
 });
+
+window.addEventListener("DOMContentLoaded", function() {
+  setTimeout(showPopup, 20000); // Aguarda 20 segundos antes de chamar a função showPopup()
+});
+
+function showPopup() {
+  var compraRecente = Math.floor(Math.random() * 5) + 1; // Gera um número aleatório de 1 a 10
+  var popup = document.getElementById("popup");
+  popup.textContent = compraRecente + " pessoas compraram este produto nos últimos 30 minutos.";
+  popup.style.display = "block"; // Exibe o popup
+}
