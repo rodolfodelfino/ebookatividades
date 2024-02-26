@@ -87,9 +87,9 @@ h1, h2, h3{
 }
 
 #mao img{
-margin-right: 60px;
-height: 100%;
-width: 800px;
+margin-right:60px;
+height: auto;
+width: 600px;
 max-width: 100%;
 }
   
@@ -244,14 +244,19 @@ max-width: 100%;
 
     #video{
       display: grid;
-      max-width: 100%;
+      max-width: 90%;
     }
 
     #mao{
-      max-width: 90%;
+      max-width: 100%;
       margin-top: 180px;
+      height: auto;
     }
-
+    #mao img{
+      max-width: 100%;
+      margin-top: 10px;
+      height: auto;
+    }
     .video-container video{
         width: 100%;
         
